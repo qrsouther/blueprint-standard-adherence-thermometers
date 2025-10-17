@@ -277,9 +277,9 @@
 
         .thermometer {
             flex: 1;
-            height: 50px;
+            height: 80px;
             background: #F4F5F7;
-            border-radius: 25px;
+            border-radius: 40px;
             overflow: visible;
             display: flex;
             position: relative;
@@ -291,7 +291,7 @@
             height: 100%;
             display: flex;
             overflow: hidden;
-            border-radius: 25px;
+            border-radius: 40px;
         }
 
         .thermometer-segment {
@@ -301,7 +301,7 @@
             justify-content: center;
             color: white;
             font-weight: 600;
-            font-size: 14px;
+            font-size: 16px;
             transition: all 0.3s ease;
             position: relative;
             border-right: 2px solid white;
@@ -386,11 +386,11 @@
                     </div>
                     <div class="legend-item-global">
                         <div class="color-box" style="background-color: #808080;"></div>
-                        <div class="label">N/A</div>
+                        <div class="label">TBD</div>
                     </div>
                     <div class="legend-item-global">
-                        <div class="color-box" style="background-color: #808080;"></div>
-                        <div class="label">TBD</div>
+                        <div class="color-box" style="background-color: #C0C0C0;"></div>
+                        <div class="label">N/A</div>
                     </div>
                 </div>
             </div>
@@ -688,8 +688,10 @@
                         counts[text] = count;
                         if (!colors[text]) {
                             // Force specific colors for certain categories
-                            if (text === 'N/A' || text === 'TBD') {
+                            if (text === 'TBD') {
                                 colors[text] = '#808080';
+                            } else if (text === 'N/A') {
+                                colors[text] = '#C0C0C0';
                             } else if (text === 'Semi-Standard') {
                                 colors[text] = '#f9c84e';
                             } else if (color) {
@@ -732,8 +734,8 @@
 
                 const total = Object.values(counts).reduce((sum, count) => sum + count, 0);
 
-                // Define the desired order for segments
-                const segmentOrder = ['Standard', 'Semi-Standard', 'Bespoke', 'Non-Standard', 'N/A', 'TBD'];
+                // Define the desired order for segments (N/A should be rightmost)
+                const segmentOrder = ['Standard', 'Semi-Standard', 'Bespoke', 'Non-Standard', 'TBD', 'N/A'];
 
                 // Sort entries by the defined order
                 const sortedEntries = Object.entries(counts).sort((a, b) => {
