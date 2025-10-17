@@ -808,7 +808,14 @@
                     segment.style.color = getContrastColor(bgColor);
                     // Only show percentage text if segment is 3% or larger
                     segment.textContent = percentage >= 3 ? Math.round(percentage) + '%' : '';
-                    segment.title = `${text}: ${count} (${percentage}%)`;
+
+                    // Custom tooltip for N/A
+                    if (text === 'N/A') {
+                        segment.title = `${count} of ${total} chapters have no solution selected, or are irrelevant to the client's operations ('N/A'), or ${percentage}%`;
+                    } else {
+                        segment.title = `${count} of ${total} chapters use a ${text} solution, or ${percentage}%`;
+                    }
+
                     thermometerInner.appendChild(segment);
                 });
 
