@@ -1,6 +1,6 @@
-# Google Sheets Dashboard - Standalone Web App
+# Blueprint Standard Adherence Thermometers - Standalone Web App
 
-A self-contained HTML/JavaScript application that displays Google Sheets data in a beautiful dashboard. Perfect for embedding in Jira as an iframe gadget.
+A self-contained HTML/JavaScript application that displays Google Sheets data in thermometer visualizations and dashboards. Perfect for embedding in Jira as an iframe gadget.
 
 ## Features
 
@@ -57,7 +57,7 @@ You have several hosting options:
 #### Option C: Internal Web Server
 
 1. Host `index.html` on your company's internal web server
-2. Access via: `https://your-server.com/sheets-dashboard/index.html`
+2. Access via: `https://your-server.com/blueprint-thermometers/index.html`
 
 #### Option D: Local File (Development Only)
 
@@ -73,7 +73,7 @@ You have several hosting options:
 3. Search for "**External Gadget**" or "**iFrame**"
 4. Add the gadget
 5. Configure it:
-   - **Title**: Google Sheets Dashboard
+   - **Title**: Blueprint Standard Adherence Thermometers
    - **Gadget URL**: Your hosted URL (e.g., `https://yourusername.github.io/repo-name/index.html`)
    - **Height**: 600px (or adjust as needed)
 6. Save the gadget

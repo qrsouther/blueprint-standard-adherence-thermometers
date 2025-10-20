@@ -1,5 +1,5 @@
 {
-  "name": "jira-sheets-dashboard",
+  "name": "blueprint-standard-adherence-thermometers",
   "version": "1.0.0",
   "description": "Custom Jira dashboard that displays data from Google Sheets",
   "main": "src/index.js",

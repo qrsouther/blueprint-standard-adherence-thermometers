@@ -1,4 +1,4 @@
-# Google Sheets Dashboard & Thermometer Visualizations
+# Blueprint Standard Adherence Thermometers
 
 A collection of web-based tools for visualizing Google Sheets data, including a thermometer-style progress dashboard and standard data viewers. Includes both a standalone web application and an Atlassian Forge app for Jira integration.
 
@@ -157,7 +157,7 @@ If you want to deploy the Jira dashboard gadget:
 ## Project Structure
 
 ```
-jira-sheets-dashboard/
+blueprint-standard-adherence-thermometers/
 ├── webapp/                      # Standalone web applications
 │   ├── index-thermometer.html   # Thermometer dashboard (main feature)
 │   ├── index.html               # API key-based viewer

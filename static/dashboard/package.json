@@ -1,7 +1,7 @@
 {
-  "name": "sheets-dashboard-frontend",
+  "name": "blueprint-thermometer-frontend",
   "version": "1.0.0",
-  "description": "Frontend for Google Sheets Dashboard",
+  "description": "Frontend for Blueprint Standard Adherence Thermometers",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",

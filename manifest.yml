@@ -1,8 +1,8 @@
 modules:
   jira:dashboardGadget:
-    - key: sheets-dashboard-gadget
-      title: Google Sheets Dashboard
-      description: Custom dashboard displaying data from Google Sheets
+    - key: blueprint-thermometer-gadget
+      title: Blueprint Standard Adherence Thermometers
+      description: Thermometer visualizations for tracking blueprint standard adherence
       thumbnail: icon.png
       resource: iframe-page
 resources:
