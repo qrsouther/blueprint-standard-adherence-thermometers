@@ -1,0 +1,17 @@
+modules:
+  jira:dashboardGadget:
+    - key: sheets-dashboard-gadget
+      title: Google Sheets Dashboard
+      description: Custom dashboard displaying data from Google Sheets
+      thumbnail: icon.png
+      resource: iframe-page
+resources:
+  - key: iframe-page
+    path: static/iframe-app
+permissions:
+  scopes:
+    - 'storage:app'
+app:
+  runtime:
+    name: nodejs20.x
+  id: ari:cloud:ecosystem::app/b2c43caa-02eb-486d-9dab-f22db476c0d3
